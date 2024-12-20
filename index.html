@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Marisa</title>
+</head>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carme&family=Concert+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+<body>
+    <nav>
+        <div class="stelline" onclick="star()">
+            <img src="images.jpeg.png" alt="stelle" width="40px">
+        </div>
+
+        <h1 class="b_font">Poenta de Stelle</h1>
+    </nav>
+
+    <header>
+        <h1>Poenta de Stelle </h1>
+        <h3>regala anche tu un vasetto di Poenta de stelle</h3>
+        <img src="vasetto.png" alt="vaseto" width="250px">
+    </header>
+
+    <div id="nascosto">
+        <h2>EasterPannetone</h2>
+        <p>
+            Sono contenteno di aver trovato una amica come tè cosi solare e divertente, quindi non arrabriati se ti ho fatto questo regallo :-P
+        </p>
+
+    </div>
+
+    <div class="auguri">
+        <h1>Buon Natale</h1>
+        <p>Le auguro di passare un felice Natale. Si diverta, ma sopratturo si rilassi. </p>
+    </div>
+
+    <div class="condizioni">
+        <h2>Termini e condizioni</h2>
+        <p>Questo regallo non potra essere retituito all' emittente, qualora 
+            fosse restituito alla persona prima citata verrano avvistate le autorita competetni,
+           per sanzionare il mittente con una sanzione di 10.000$ in contanti. Si ricorda in oltre di non gettare, riciclare, abbandonare il prodotto a
+         persone che non sono autorizzate o in luoghi non addibiti al suo scopo.  
+        </p>
+    </div>
+
+    <script>
+        var i = 0;
+        var men = document.getElementById("nascosto");
+        function star() {
+            if (i == 1) {
+            men.style.left= "-500px";
+            i = 0;
+        }else{
+            men.style.left= "0px";
+            i = 1;
+        }
+            
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body{
+    background-color: rgb(73, 34, 0);
+    color: aliceblue;
+    margin: 0;
+    font-family: "Sour Gummy", serif;
+}
+.b_font {
+    margin: 0;
+    font-size: 30px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgb(42, 25, 0), rgb(0,0,0));
+    padding: 10px;
+}
+
+.stelline img{
+    position:absolute;
+    z-index: 10;
+    top: 10px;
+    left: 10px;
+    animation: gino 2s  infinite alternate-reverse ease-in-out;
+}
+@keyframes gino{
+    
+    0%{transform: rotate(25deg);}
+    100%{transform: rotate(-25deg);}
+}
+
+header{
+    color: rgb(73, 34, 0);
+    background-color: rgb(253, 230, 201);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1{
+    padding-top: 100px;
+    font-size: 60px;
+    text-align: center;
+}
+
+header h3{
+    font-size: 30px;
+    text-align: center;
+    width: 80%;
+}
+header img{
+    transform: rotate(15deg);
+}
+
+#nascosto{
+    position: absolute;
+    margin: 0;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(253, 230, 201, 0.849);
+    color: rgb(42, 25, 0);
+    left: -500px;
+    transition: left 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955)  ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#nascosto h2{
+    font-size: 40px;
+}
+#nascosto p{
+    text-align: center;
+    font-size: 20px;
+    width: 70%;
+}
+
+.auguri{
+    background: url(https://www.pandistelle.it/media/static/pds2018/dist/img/PDS_xmas2024_background_desktop.jpg?33bcbe442f6b3225e4da29ddc5251550=);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.auguri h1{
+
+    font-size: 60px;
+    text-align: center;
+}
+
+.auguri p{
+    text-align: center;
+    font-size: 20px;
+    width: 80%;
+}
+
+.condizioni{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, rgb(42, 25, 0), rgb(0,0,0));
+}
